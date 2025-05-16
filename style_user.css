@@ -29,37 +29,56 @@ p{
     align-items: center;
 }
 
-img{
+.perfil {
     display: flex;
+    width: 400px;
+    justify-content: space-around;
+}
+
+
+.perfil .imagem {
+    display: flex;
+    height: 120px;
+    width: 120px;
+    border: #230871 1px solid;
+    border-radius: 15px;
+    
+}
+
+
+.perfil img {
+    border-radius: 15px;
+}
+
+
+.botoes{
+    margin-top: 10px;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.botoes a:hover{
+    background-color: white;
+    color: #230871;
+
+}
+
+.botoes a{
+    display: flex;
+    justify-content: center;
     width: 100px;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
+    background: #230871;
+    border-radius: 15px ;
 }
-
-.aluno, .professor {
-    background-color: #230871;
-    width: 200px;
-    height: 200px;
-    border-radius: 40px;
-    margin-bottom: 16px;
-}
-
-.botao_aluno, .botao_professor {
-    background-color: #230871;
-    min-width: 100px;
-    height: 48px;
-    padding: 5px;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 40px;
-}
+   
 
 a {
-    color: aliceblue;
+    color: #fff;
     text-decoration: none;
     font-family: "Nunito", sans-serif;
 }
 
+.aluno {
+    display: flex;
+}
