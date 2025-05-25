@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ 
+
+
+header{
+    font-family: "Nunito","sans-serif";
+    background: #FFD488;
+    border-radius: 40px;
+    color: #230871;
+    text-align: center;
+    padding: 20px 20px ;
+    margin: auto;
+    width: fit-content;
+    justify-content: center;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    
+}
+
+
+.marca_dagua{
+    position:absolute;
+    left: 10px;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px ;
+    
+}
+
+.bloco_escolha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+    
+}
+
+.bloco_individual{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.opcao{
+    display: flex;
+    flex-direction: column ;
+    background: #230871;
+    height: 250px;
+    width: 250px;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+ 
+}
+
+
+
+
+.opcao h2{
+    display: flex;
+    color: #FFD488;
+    
+}
+
+.entrar  {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #230871;
+    border-radius: 15px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+.entrar:hover {
+    background-color:#230871 ;
+    color: #fff;
+}
