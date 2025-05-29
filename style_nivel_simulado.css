@@ -7,91 +7,113 @@
  
 
 
-header{
-    font-family: "Nunito","sans-serif";
-    background: #FFD488;
-    border-radius: 40px;
-    color: #230871;
-    text-align: center;
-    padding: 20px 20px ;
-    margin: auto;
-    width: fit-content;
-    justify-content: center;
-}
-
 body {
     font-family: "Nunito", sans-serif;
-    
+    width: 100%;
 }
 
+/* HEADER ESTILOS  */
 
-.marca_dagua{
-    position:absolute;
-    left: 10px;
+header {
+    font-family: "Nunito", "sans-serif";
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0 0 20px 0;
+    margin: 0;
+
+}
+
+header .logo {
+    position: absolute;
+    left: 23px;
+    top: 20px;
+}
+
+header .enunciado {
     font-weight: bold;
-    font-family: "Nunito", sans-serif;
-    font-size: 20px ;
-    
+    background-color: #FFD488;
+    width: 800px;
+    height: auto;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    min-height: 68px;
+    padding: 14px 0 0 0;
 }
 
-.bloco_escolha{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    margin-top: 40px;
-    
+header h1 {
+    font-size: 20px;
 }
 
-.bloco_individual{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.opcao{
-    display: flex;
-    flex-direction: column ;
-    background: #230871;
-    height: 250px;
-    width: 250px;
-    border-radius: 40px;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
- 
-}
-
-
-
-
-.opcao h2{
-    display: flex;
-    color: #FFD488;
-    
-}
-
-.entrar  {
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #fff;
+header h1,
+h2 {
     color: #230871;
-    border-radius: 15px;
+    font-weight: 300px;
+}
+
+/* MAIN ESTILOS */
+
+main .bloco_escolha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 100px;
+}
+
+main .bloco_individual {
+    min-height: 250px;
+    width: 280px;
+    box-shadow: 5px 0px 0px 1px rgb(114, 114, 114);
+    border-radius: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main .bloco_individual:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+main .bloco_opcao {
+    background: #230871;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 30px 0 50px 20px;
+}
+
+
+main .bloco_opcao h2,
+h1 {
+    color: #FFD488;
+}
+
+main .bloco_entrar {
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+    padding-top: 40px;
+}
+
+main .entrar {
+    padding: 10px 30px;
+    background-color: #230871;
+    color: white;
+    border-radius: 30px;
     font-weight: bold;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: auto;
+    letter-spacing: 2px;
+}
+
+main .entrar:hover {
+    background-color: white;
+    color: #230871;
+    font-weight: bold;
 }
 
 
-a{
+main a {
     text-decoration: none;
-}
-
-
-.entrar:hover {
-    background-color:#230871 ;
-    color: #fff;
 }
